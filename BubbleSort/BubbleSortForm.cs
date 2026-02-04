@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace BubbleSort
 {
-    public partial class Form1 : Form
+    public partial class BubbleSortForm : Form
     {
         AlgorithmBase<int> algorithm = new BubbleSort<int>();
-        public Form1()
+        public BubbleSortForm()
         {
             InitializeComponent();
         }
