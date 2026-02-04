@@ -1,5 +1,5 @@
 <Solution>
   <Project Path="Algorithm/Algorithm.csproj" Id="4e941658-5700-4a0b-9d5c-3653e2b45666" />
   <Project Path="AlgorithmTest/AlgorithmTest.csproj" Id="4e2df8ec-04d5-4c27-bdb2-1ef7adcec5bc" />
-  <Project Path="BubbleSort/SortAlgorithm.csproj" Id="22b7cc30-1bb8-4a4f-97c2-8d4ff68b2c66" />
+  <Project Path="BubbleSort/VisualSort.csproj" Id="22b7cc30-1bb8-4a4f-97c2-8d4ff68b2c66" />
 </Solution>
