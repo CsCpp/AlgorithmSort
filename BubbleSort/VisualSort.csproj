@@ -52,8 +52,12 @@
     <Compile Include="BubbleSortForm.Designer.cs">
       <DependentUpon>BubbleSortForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SortedItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VerticalProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="BubbleSortForm.resx">
       <DependentUpon>BubbleSortForm.cs</DependentUpon>
     </EmbeddedResource>

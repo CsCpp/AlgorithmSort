@@ -4,12 +4,11 @@ namespace Algorithm
 {
     public class CoctailSort<T> : AlgorithmBase<T> where T : IComparable
     {
-        public override void Sort()
+        protected override void MakeSort()
         {
             int left = 0;
             int right = Items.Count - 1;
-            SwopCount = 0;
-
+ 
             while (left < right)
             {
                 var sc = SwopCount;
