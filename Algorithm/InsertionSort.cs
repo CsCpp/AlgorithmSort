@@ -13,7 +13,6 @@ namespace Algorithm
                 while(j>0 && Items[j].CompareTo(Items[j-1])==-1)
                 {
                     Swop(j, j - 1);
-                    SwopCount++;
                     ComparisonCount++;
                     j--;
                 }

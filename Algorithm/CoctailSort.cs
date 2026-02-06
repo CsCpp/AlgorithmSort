@@ -17,7 +17,6 @@ namespace Algorithm
                     if (Items[i].CompareTo(Items[i + 1]) == 1)
                     {
                         Swop(i, i + 1);
-                        
                     }
                     ComparisonCount++;
                 }
@@ -28,7 +27,6 @@ namespace Algorithm
                     if (Items[i - 1].CompareTo(Items[i]) == 1)
                     {
                         Swop(i, i - 1);
-
                     }
                     ComparisonCount++;
                 }

@@ -16,7 +16,7 @@ namespace BubbleSort
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BubbleSortForm());
+            Application.Run(new SortForm());
         }
     }
 }

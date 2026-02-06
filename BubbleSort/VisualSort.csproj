@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BubbleSortForm.cs">
+    <Compile Include="SortForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BubbleSortForm.Designer.cs">
-      <DependentUpon>BubbleSortForm.cs</DependentUpon>
+    <Compile Include="SortForm.Designer.cs">
+      <DependentUpon>SortForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SortedItem.cs" />
     <Compile Include="Program.cs" />
@@ -58,8 +58,8 @@
     <Compile Include="VerticalProgressBar.cs">
       <SubType>Component</SubType>
     </Compile>
-    <EmbeddedResource Include="BubbleSortForm.resx">
-      <DependentUpon>BubbleSortForm.cs</DependentUpon>
+    <EmbeddedResource Include="SortForm.resx">
+      <DependentUpon>SortForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

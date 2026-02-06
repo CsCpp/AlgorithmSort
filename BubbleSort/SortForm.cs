@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace BubbleSort
 {
-    public partial class BubbleSortForm : Form
+    public partial class SortForm : Form
     {
         AlgorithmBase<int> algorithm = new BubbleSort<int>();
         List<SortedItem> SortedItems = new List<SortedItem>();
 
-        public BubbleSortForm()
+        public SortForm()
         {
             InitializeComponent();
            
@@ -53,6 +53,8 @@ namespace BubbleSort
                 panel1.Controls.Add(item2.VerticalProgressBar);
                 i++;
             }
+            labelSwop.Text = "Swop: " + algorithm.SwopCount.ToString();
+            labelComparison.Text = "Comparison: " + algorithm.ComparisonCount.ToString();
 
         }
 
