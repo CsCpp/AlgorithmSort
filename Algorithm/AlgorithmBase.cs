@@ -35,5 +35,11 @@ namespace Algorithm
         {
             Items.Sort();
         }
+        public void Clear()
+        {
+            Items.Clear();
+            SwopCount = 0;
+            ComparisonCount = 0;
+        }
     }
 }

@@ -36,6 +36,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelSwop = new System.Windows.Forms.Label();
             this.labelComparison = new System.Windows.Forms.Label();
+            this.buttonCoctailSort = new System.Windows.Forms.Button();
+            this.buttonInsertionSort = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -96,7 +98,7 @@
             // labelSwop
             // 
             this.labelSwop.AutoSize = true;
-            this.labelSwop.Location = new System.Drawing.Point(127, 77);
+            this.labelSwop.Location = new System.Drawing.Point(501, 78);
             this.labelSwop.Name = "labelSwop";
             this.labelSwop.Size = new System.Drawing.Size(46, 13);
             this.labelSwop.TabIndex = 9;
@@ -105,17 +107,39 @@
             // labelComparison
             // 
             this.labelComparison.AutoSize = true;
-            this.labelComparison.Location = new System.Drawing.Point(196, 77);
+            this.labelComparison.Location = new System.Drawing.Point(570, 78);
             this.labelComparison.Name = "labelComparison";
             this.labelComparison.Size = new System.Drawing.Size(74, 13);
             this.labelComparison.TabIndex = 10;
             this.labelComparison.Text = "Comparison: 0";
+            // 
+            // buttonCoctailSort
+            // 
+            this.buttonCoctailSort.Location = new System.Drawing.Point(105, 68);
+            this.buttonCoctailSort.Name = "buttonCoctailSort";
+            this.buttonCoctailSort.Size = new System.Drawing.Size(86, 23);
+            this.buttonCoctailSort.TabIndex = 11;
+            this.buttonCoctailSort.Text = "CoctailSort";
+            this.buttonCoctailSort.UseVisualStyleBackColor = true;
+            this.buttonCoctailSort.Click += new System.EventHandler(this.buttonCoctailSort_Click);
+            // 
+            // buttonInsertionSort
+            // 
+            this.buttonInsertionSort.Location = new System.Drawing.Point(197, 68);
+            this.buttonInsertionSort.Name = "buttonInsertionSort";
+            this.buttonInsertionSort.Size = new System.Drawing.Size(86, 23);
+            this.buttonInsertionSort.TabIndex = 12;
+            this.buttonInsertionSort.Text = "InsertSort";
+            this.buttonInsertionSort.UseVisualStyleBackColor = true;
+            this.buttonInsertionSort.Click += new System.EventHandler(this.buttonInsertionSort_Click);
             // 
             // SortForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(660, 343);
+            this.Controls.Add(this.buttonInsertionSort);
+            this.Controls.Add(this.buttonCoctailSort);
             this.Controls.Add(this.labelComparison);
             this.Controls.Add(this.labelSwop);
             this.Controls.Add(this.panel1);
@@ -141,6 +165,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label labelSwop;
         private System.Windows.Forms.Label labelComparison;
+        private System.Windows.Forms.Button buttonCoctailSort;
+        private System.Windows.Forms.Button buttonInsertionSort;
     }
 }
 
