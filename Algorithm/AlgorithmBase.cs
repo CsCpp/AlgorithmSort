@@ -10,6 +10,11 @@ namespace Algorithm
         public int ComparisonCount { get; protected set; } = 0;
 
         public List<T> Items { get; set; } = new List<T>();
+        public AlgorithmBase(IEnumerable<T> items)
+        {
+            Items.AddRange(items);
+        }
+        public AlgorithmBase() { }
         protected void Swop(int positionA, int positionB)
         {
             if (positionA < Items.Count && positionB < Items.Count)
@@ -40,6 +45,11 @@ namespace Algorithm
             Items.Clear();
             SwopCount = 0;
             ComparisonCount = 0;
+        }
+        protected int Compare (T a, T b)
+        {
+
+            return a.CompareTo(b);
         }
     }
 }

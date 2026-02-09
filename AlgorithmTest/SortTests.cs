@@ -25,7 +25,7 @@ namespace AlgorithmTest
         }
 
         [TestMethod]
-        public void InsertionTest()
+        public void InsertionSortTest()
         {
             //arrange
             var insert = new InsertionSort<int>();
@@ -42,7 +42,7 @@ namespace AlgorithmTest
             }
         }
         [TestMethod]
-        public void BubbleTest()
+        public void BubbleSortTest()
         {
             //arrange
             var bubble = new BubbleSort<int>();
@@ -59,7 +59,7 @@ namespace AlgorithmTest
             }
         }
         [TestMethod]
-        public void CoctailTest()
+        public void CoctailSortTest()
         {
             //arrange
             var coctail = new CoctailSort<int>();
@@ -75,6 +75,39 @@ namespace AlgorithmTest
 
             }
         }
+        [TestMethod]
+        public void ShellSortTest()
+        {
+            //arrange
+            var shell = new ShellSort<int>();
+            shell.Items.AddRange(Items);
 
+            //act
+            shell.Sort();
+
+            //assert
+            for (int i = 0; i < Sorted.Count; i++)
+            {
+                Assert.AreEqual(Sorted[i], shell.Items[i]);
+
+            }
+        }
+        [TestMethod]
+        public void BaseSortTest()
+        {
+            //arrange
+            var baseSort = new AlgorithmBase<int>();
+            baseSort.Items.AddRange(Items);
+
+            //act
+            baseSort.Sort();
+
+            //assert
+            for (int i = 0; i < Sorted.Count; i++)
+            {
+                Assert.AreEqual(Sorted[i], baseSort.Items[i]);
+
+            }
+        }
     }
 }

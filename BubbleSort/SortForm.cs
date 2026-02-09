@@ -1,6 +1,7 @@
 ﻿using Algorithm;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace BubbleSort
@@ -30,10 +31,7 @@ namespace BubbleSort
                 panel1.Controls.Add(item.Label);
                 panel1.Controls.Add(item.VerticalProgressBar);
             }
-                    
         }
-
-       
 
         private void MySort()
         {
@@ -93,9 +91,16 @@ namespace BubbleSort
         }
         private void button2_Click(object sender, EventArgs e)
         {
+            //  var bbule = new BubbleSort<SortedItem>(SortedItems);
+
             algorithm = new BubbleSort<int>();
 
             MySort();
+        }
+        private void Swop(SortedItem a, SortedItem b)
+        {
+            a.SetColor(Color.Red);
+            b.SetColor(Color.Green);
         }
     }
 }

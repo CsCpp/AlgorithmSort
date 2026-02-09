@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace BubbleSort
@@ -7,7 +8,7 @@ namespace BubbleSort
     {
        public VerticalProgressBar VerticalProgressBar { get; private set; }
         public Label Label { get; private set; }
-        public int Value { get; set; }
+        public int Value { get; private set; }
 
         public SortedItem(int value, int x, int y = 0)
         {
@@ -37,6 +38,27 @@ namespace BubbleSort
 
            
         }
-            
+
+        public  void SetValue(int value)
+        {
+            Value = value;
+            VerticalProgressBar.Value = value;
+            Label.Text = value.ToString();
         }
+        public void SetColor(Color color)
+        {
+            VerticalProgressBar.BackColor = color;
+        }
+        public int CompareTo(object obj)
+        {
+            if (obj is SortedItem item)
+            {
+                return Value.CompareTo(item.Value);
+            }
+            else 
+            {
+                throw new ArgumentException($"obj is not {nameof(SortedItem)}", nameof(obj));
+            }
+        }
+    }
 }
