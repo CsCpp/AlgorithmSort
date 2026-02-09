@@ -6,6 +6,12 @@ namespace Algorithm
 {
     public class AlgorithmBase<T> where T: System.IComparable
     {
+        public event EventHandler<Tuple<T, T>> CompareEvent;
+
+        public event EventHandler<Tuple<T, T>> SwopEvent;
+
+        public event EventHandler<Tuple<int, T>> SetEvent;
+
         public int SwopCount { get; protected set; } = 0;
         public int ComparisonCount { get; protected set; } = 0;
 
@@ -19,10 +25,13 @@ namespace Algorithm
         {
             if (positionA < Items.Count && positionB < Items.Count)
             {
+                SwopEvent?.Invoke(this, new Tuple<T, T>(Items[positionA], Items[positionB]));
+                SwopCount++;
+
                 var temp = Items[positionA];
                 Items[positionA] = Items[positionB];
                 Items[positionB] = temp;
-                SwopCount++;
+               
             }
         }
    
@@ -48,6 +57,7 @@ namespace Algorithm
         }
         protected int Compare (T a, T b)
         {
+            CompareEvent?.Invoke(this, new Tuple<T, T>(a, b));
             ComparisonCount++;
             return a.CompareTo(b);
         }

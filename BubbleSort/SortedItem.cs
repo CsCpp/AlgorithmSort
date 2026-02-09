@@ -8,7 +8,7 @@ namespace BubbleSort
     {
        public VerticalProgressBar VerticalProgressBar { get; private set; }
         public Label Label { get; private set; }
-        public int Value { get; private set; }
+        public int Value { get;  set; }
 
         public SortedItem(int value, int x, int y = 0)
         {
