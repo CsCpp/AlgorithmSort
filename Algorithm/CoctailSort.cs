@@ -14,21 +14,20 @@ namespace Algorithm
                 var sc = SwopCount;
                 for (int i = left; i < right; i++)
                 {
-                    if (Items[i].CompareTo(Items[i + 1]) == 1)
+                    if (Compare(Items[i], Items[i + 1]) == 1)
                     {
                         Swop(i, i + 1);
                     }
-                    ComparisonCount++;
                 }
                 right--;
                 if (sc == SwopCount) break;
                 for (int i = right; i  > left; i--)
                 {
-                    if (Items[i - 1].CompareTo(Items[i]) == 1)
+                    if (Compare(Items[i - 1], Items[i]) == 1)
+                        //(Items[i - 1].CompareTo(Items[i]) == 1)
                     {
                         Swop(i, i - 1);
                     }
-                    ComparisonCount++;
                 }
                 left++;
                 if (sc == SwopCount) break;

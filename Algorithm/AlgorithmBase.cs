@@ -48,7 +48,7 @@ namespace Algorithm
         }
         protected int Compare (T a, T b)
         {
-
+            ComparisonCount++;
             return a.CompareTo(b);
         }
     }

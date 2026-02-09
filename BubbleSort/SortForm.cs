@@ -102,5 +102,14 @@ namespace BubbleSort
             a.SetColor(Color.Red);
             b.SetColor(Color.Green);
         }
+
+        private void buttonShellSort_Click(object sender, EventArgs e)
+        {
+            algorithm = new ShellSort<int>();
+
+            MySort();
+        }
+
+    
     }
 }

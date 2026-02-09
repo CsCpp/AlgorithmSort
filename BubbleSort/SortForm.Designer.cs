@@ -38,6 +38,7 @@
             this.labelComparison = new System.Windows.Forms.Label();
             this.buttonCoctailSort = new System.Windows.Forms.Button();
             this.buttonInsertionSort = new System.Windows.Forms.Button();
+            this.buttonShellSort = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -133,11 +134,23 @@
             this.buttonInsertionSort.UseVisualStyleBackColor = true;
             this.buttonInsertionSort.Click += new System.EventHandler(this.buttonInsertionSort_Click);
             // 
+            // buttonShellSort
+            // 
+            this.buttonShellSort.Cursor = System.Windows.Forms.Cursors.PanWest;
+            this.buttonShellSort.Location = new System.Drawing.Point(289, 68);
+            this.buttonShellSort.Name = "buttonShellSort";
+            this.buttonShellSort.Size = new System.Drawing.Size(86, 23);
+            this.buttonShellSort.TabIndex = 13;
+            this.buttonShellSort.Text = "ShellSort";
+            this.buttonShellSort.UseVisualStyleBackColor = true;
+            this.buttonShellSort.Click += new System.EventHandler(this.buttonShellSort_Click);
+            // 
             // SortForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(660, 343);
+            this.Controls.Add(this.buttonShellSort);
             this.Controls.Add(this.buttonInsertionSort);
             this.Controls.Add(this.buttonCoctailSort);
             this.Controls.Add(this.labelComparison);
@@ -167,6 +180,7 @@
         private System.Windows.Forms.Label labelComparison;
         private System.Windows.Forms.Button buttonCoctailSort;
         private System.Windows.Forms.Button buttonInsertionSort;
+        private System.Windows.Forms.Button buttonShellSort;
     }
 }
 
