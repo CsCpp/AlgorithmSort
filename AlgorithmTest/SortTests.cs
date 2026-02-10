@@ -93,6 +93,23 @@ namespace AlgorithmTest
             }
         }
         [TestMethod]
+        public void TreeSortTest()
+        {
+            //arrange
+            var treeTest = new TreeSort<int>();
+            treeTest.Items.AddRange(Items);
+
+            //act
+            treeTest.Sort();
+
+            //assert
+            for (int i = 0; i < Sorted.Count; i++)
+            {
+                Assert.AreEqual(Sorted[i], treeTest.Items[i]);
+
+            }
+        }
+        [TestMethod]
         public void BaseSortTest()
         {
             //arrange

@@ -48,11 +48,11 @@ namespace BubbleSort
             algorithm.Clear();
         }
 
-        private void  Algorithm_CompareEvent(object sender, Tuple<SortedItem, SortedItem> e)
+        private void  Algorithm_CompareEvent(object sender, Tuple<int, int> e)
         {
-            var temp = e.Item1.Value;
+         /*   var temp = e.Item1.Value;
             e.Item1.Value = e.Item2.Value;
-            e.Item2.Value = temp;
+            e.Item2.Value = temp;*/
         }
 
         private void Algorithm_SwopEvent(object sender, Tuple<int, int> e)
