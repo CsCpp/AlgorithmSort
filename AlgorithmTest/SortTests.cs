@@ -110,6 +110,23 @@ namespace AlgorithmTest
             }
         }
         [TestMethod]
+        public void HeapSortTest()
+        {
+            //arrange
+            var heapTest = new HeapSort<int>();
+            heapTest.Items.AddRange(Items);
+
+            //act
+            heapTest.Sort();
+
+            //assert
+            for (int i = 0; i < Sorted.Count; i++)
+            {
+                Assert.AreEqual(Sorted[i], heapTest.Items[i]);
+
+            }
+        }
+        [TestMethod]
         public void BaseSortTest()
         {
             //arrange
