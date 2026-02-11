@@ -127,6 +127,14 @@ namespace BubbleSort
                 panel1.Controls.Add(item.VerticalProgressBar);
             }
         }
+        private void buttonTreeSort_Click(object sender, EventArgs e)
+        {
+            algorithm = new TreeSort<int>();
+
+            MySort();
+        }
         #endregion
+
+
     }
 }

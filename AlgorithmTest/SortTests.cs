@@ -127,6 +127,23 @@ namespace AlgorithmTest
             }
         }
         [TestMethod]
+        public void MergeSortTest()
+        {
+            //arrange
+            var mergeTest = new MergeSort<int>();
+            mergeTest.Items.AddRange(Items);
+
+            //act
+            mergeTest.Sort();
+
+            //assert
+            for (int i = 0; i < Sorted.Count; i++)
+            {
+                Assert.AreEqual(Sorted[i], mergeTest.Items[i]);
+
+            }
+        }
+        [TestMethod]
         public void BaseSortTest()
         {
             //arrange

@@ -39,6 +39,7 @@
             this.buttonCoctailSort = new System.Windows.Forms.Button();
             this.buttonInsertionSort = new System.Windows.Forms.Button();
             this.buttonShellSort = new System.Windows.Forms.Button();
+            this.buttonTreeSort = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -136,7 +137,7 @@
             // 
             // buttonShellSort
             // 
-            this.buttonShellSort.Cursor = System.Windows.Forms.Cursors.PanWest;
+            this.buttonShellSort.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonShellSort.Location = new System.Drawing.Point(289, 68);
             this.buttonShellSort.Name = "buttonShellSort";
             this.buttonShellSort.Size = new System.Drawing.Size(86, 23);
@@ -145,11 +146,23 @@
             this.buttonShellSort.UseVisualStyleBackColor = true;
             this.buttonShellSort.Click += new System.EventHandler(this.buttonShellSort_Click);
             // 
+            // buttonTreeSort
+            // 
+            this.buttonTreeSort.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonTreeSort.Location = new System.Drawing.Point(381, 68);
+            this.buttonTreeSort.Name = "buttonTreeSort";
+            this.buttonTreeSort.Size = new System.Drawing.Size(86, 23);
+            this.buttonTreeSort.TabIndex = 14;
+            this.buttonTreeSort.Text = "TreeSort";
+            this.buttonTreeSort.UseVisualStyleBackColor = true;
+            this.buttonTreeSort.Click += new System.EventHandler(this.buttonTreeSort_Click);
+            // 
             // SortForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(660, 343);
+            this.Controls.Add(this.buttonTreeSort);
             this.Controls.Add(this.buttonShellSort);
             this.Controls.Add(this.buttonInsertionSort);
             this.Controls.Add(this.buttonCoctailSort);
@@ -181,6 +194,7 @@
         private System.Windows.Forms.Button buttonCoctailSort;
         private System.Windows.Forms.Button buttonInsertionSort;
         private System.Windows.Forms.Button buttonShellSort;
+        private System.Windows.Forms.Button buttonTreeSort;
     }
 }
 
