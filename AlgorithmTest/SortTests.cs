@@ -143,6 +143,7 @@ namespace AlgorithmTest
 
             }
         }
+        [TestMethod]
         public void SelectionSortTest()
         {
             //arrange
@@ -156,6 +157,23 @@ namespace AlgorithmTest
             for (int i = 0; i < Sorted.Count; i++)
             {
                 Assert.AreEqual(Sorted[i], selectionTest.Items[i]);
+
+            }
+        }
+        [TestMethod]
+        public void GnomeSortTest()
+        {
+            //arrange
+            var gnomeTest = new GnomeSort<int>();
+            gnomeTest.Items.AddRange(Items);
+
+            //act
+            gnomeTest.Sort();
+
+            //assert
+            for (int i = 0; i < Sorted.Count; i++)
+            {
+                Assert.AreEqual(Sorted[i], gnomeTest.Items[i]);
 
             }
         }

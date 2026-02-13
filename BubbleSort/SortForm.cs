@@ -24,8 +24,8 @@ namespace BubbleSort
         {
             algorithm.Items.AddRange(SortList);
 
-            algorithm.CompareEvent += Algorithm_CompareEvent;
-            algorithm.SwopEvent += Algorithm_SwopEvent;
+          //  algorithm.CompareEvent += Algorithm_CompareEvent;
+           // algorithm.SwopEvent += Algorithm_SwopEvent;
 
             algorithm.Sort();
 
@@ -130,6 +130,12 @@ namespace BubbleSort
         private void buttonTreeSort_Click(object sender, EventArgs e)
         {
             algorithm = new TreeSort<int>();
+
+            MySort();
+        }
+        private void buttonGnomeSort_Click(object sender, EventArgs e)
+        {
+            algorithm = new GnomeSort<int>();
 
             MySort();
         }

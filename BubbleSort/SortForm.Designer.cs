@@ -40,6 +40,7 @@
             this.buttonInsertionSort = new System.Windows.Forms.Button();
             this.buttonShellSort = new System.Windows.Forms.Button();
             this.buttonTreeSort = new System.Windows.Forms.Button();
+            this.buttonGnomeSort = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -157,11 +158,23 @@
             this.buttonTreeSort.UseVisualStyleBackColor = true;
             this.buttonTreeSort.Click += new System.EventHandler(this.buttonTreeSort_Click);
             // 
+            // buttonGnomeSort
+            // 
+            this.buttonGnomeSort.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonGnomeSort.Location = new System.Drawing.Point(381, 39);
+            this.buttonGnomeSort.Name = "buttonGnomeSort";
+            this.buttonGnomeSort.Size = new System.Drawing.Size(86, 23);
+            this.buttonGnomeSort.TabIndex = 15;
+            this.buttonGnomeSort.Text = "GnomeSort";
+            this.buttonGnomeSort.UseVisualStyleBackColor = true;
+            this.buttonGnomeSort.Click += new System.EventHandler(this.buttonGnomeSort_Click);
+            // 
             // SortForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(660, 343);
+            this.Controls.Add(this.buttonGnomeSort);
             this.Controls.Add(this.buttonTreeSort);
             this.Controls.Add(this.buttonShellSort);
             this.Controls.Add(this.buttonInsertionSort);
@@ -195,6 +208,7 @@
         private System.Windows.Forms.Button buttonInsertionSort;
         private System.Windows.Forms.Button buttonShellSort;
         private System.Windows.Forms.Button buttonTreeSort;
+        private System.Windows.Forms.Button buttonGnomeSort;
     }
 }
 
