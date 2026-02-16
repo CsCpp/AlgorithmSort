@@ -178,6 +178,23 @@ namespace AlgorithmTest
             }
         }
         [TestMethod]
+        public void RadixSortTest()
+        {
+            //arrange
+            var radixTest = new RadixSort<int>();
+            radixTest.Items.AddRange(Items);
+
+            //act
+            radixTest.Sort();
+
+            //assert
+            for (int i = 0; i < Sorted.Count; i++)
+            {
+                Assert.AreEqual(Sorted[i], radixTest.Items[i]);
+
+            }
+        }
+        [TestMethod]
         public void BaseSortTest()
         {
             //arrange

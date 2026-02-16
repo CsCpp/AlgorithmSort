@@ -18,8 +18,6 @@ namespace BubbleSort
            
         }
 
-        
-
         private void MySort()
         {
             algorithm.Items.AddRange(SortList);
