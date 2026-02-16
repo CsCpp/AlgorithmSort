@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 namespace Algorithm
 {
     // только целые числа :(
-    public class RadixSort<T> : AlgorithmBase<T> where T : IComparable
+    public class LsdRadixSort<T> : AlgorithmBase<T> where T : IComparable
     {
-        public RadixSort() { }  
-        public RadixSort(IEnumerable<T> items) : base(items) { }
+        public LsdRadixSort() { }  
+        public LsdRadixSort(IEnumerable<T> items) : base(items) { }
         protected override void MakeSort()
         {
             var groups = new List<List<T>>();

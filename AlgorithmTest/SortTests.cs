@@ -178,19 +178,36 @@ namespace AlgorithmTest
             }
         }
         [TestMethod]
-        public void RadixSortTest()
+        public void LsdRadixSortTest()
         {
             //arrange
-            var radixTest = new RadixSort<int>();
-            radixTest.Items.AddRange(Items);
+            var lsdRadixTest = new LsdRadixSort<int>();
+            lsdRadixTest.Items.AddRange(Items);
 
             //act
-            radixTest.Sort();
+            lsdRadixTest.Sort();
 
             //assert
             for (int i = 0; i < Sorted.Count; i++)
             {
-                Assert.AreEqual(Sorted[i], radixTest.Items[i]);
+                Assert.AreEqual(Sorted[i], lsdRadixTest.Items[i]);
+
+            }
+        }
+        [TestMethod]
+        public void MsdRadixSortTest()
+        {
+            //arrange
+            var msdRadixTest = new MsdRadixSort<int>();
+            msdRadixTest.Items.AddRange(Items);
+
+            //act
+            msdRadixTest.Sort();
+
+            //assert
+            for (int i = 0; i < Sorted.Count; i++)
+            {
+                Assert.AreEqual(Sorted[i], msdRadixTest.Items[i]);
 
             }
         }
