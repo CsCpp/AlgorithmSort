@@ -212,6 +212,23 @@ namespace AlgorithmTest
             }
         }
         [TestMethod]
+        public void QuickSortTest()
+        {
+            //arrange
+            var quickTest = new QuickSort<int>();
+            quickTest.Items.AddRange(Items);
+
+            //act
+            quickTest.Sort();
+
+            //assert
+            for (int i = 0; i < Sorted.Count; i++)
+            {
+                Assert.AreEqual(Sorted[i], quickTest.Items[i]);
+
+            }
+        }
+        [TestMethod]
         public void BaseSortTest()
         {
             //arrange
